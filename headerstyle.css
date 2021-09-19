@@ -1,8 +1,11 @@
+
 *{
     margin:0;
     padding:0;
 }
 .logo {
+    margin-top: 2%;
+    margin-bottom: 1%;
     text-align: center;
   }
 nav{
@@ -12,6 +15,9 @@ nav ul{
         overflow: auto;
      margin-top: 20px;
      margin-bottom:20px;
+}
+#hamburger,label{
+    display: none;
 }
 .navlink{
     border-top:1px solid #000000;
@@ -23,8 +29,8 @@ nav ul{
 nav li{
     float:left;
     list-style: none;
-    margin:5px 20px;
-    margin-left:82px;  
+    margin: 0.75% 2%;
+    margin-left:6%;  
     text-align: center;
 }
 nav li a{
@@ -35,9 +41,9 @@ font-weight: normal;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
-    padding:4px 4px;
-    text-decoration: none;
-    color:#000000;
+padding:2% 2%;
+text-decoration: none;
+color:#000000;
 }
 .header{
     padding-top:25px;
@@ -72,9 +78,12 @@ text-align: center;
         padding-top: 45%;
     }
     .bars{
-        font-size: 30px;
+        font-size: 40px;
     float: right;
     padding: 5% 5% 0 0;
+    }
+    label{
+        display:block;
     }
     #hamburger{
         display:none;
@@ -96,3 +105,77 @@ text-align: center;
     }
 
 }
+    @media (max-width:1110px) and (min-width:670px){
+        nav li{
+            margin:5px 20px 100px 0;
+            text-align: center;
+            display: block;
+            width:100%;
+        } 
+        nav li a
+        {
+            font-size: 68px;
+        }
+        .header{
+            font-size: 78px;
+        }
+        .navlink{
+            display: none;
+            border: none;
+        }
+        nav{
+            height: 100vh;
+        }
+        img{
+            height: 100%;
+        }
+        .logo{
+            height: 30%;
+            margin:auto 0;
+            padding-top: 40%;
+        }
+        .bars{
+            font-size:50px;
+        float: right;
+        padding: 5% 5% 0 0;
+        }
+        label{
+            display:block;
+        }
+        #hamburger{
+            display:none;
+        }
+        #hamburger:checked~.navlink{
+            display:block;
+            height: 100vh;
+            z-index: 1;
+            position:absolute;
+            top: 15%;
+            left:0;
+            width: 100%;
+        }
+        #hamburger:checked~.logo{
+            display: none;
+        }
+        nav ul{
+            text-align: center;
+        }
+    
+    }
+    @media (max-width:1210px) and (min-width:1110px)
+    {
+        nav li{
+            margin:0.5% 1%;
+            margin-left:4.5%;
+        }
+    }
+    @media (max-width:1296px) and (min-width:1210px)
+    {
+        nav li{
+            margin:0.5% 2%;
+            margin-left:4.5%;
+        }
+    }
+    
+
+
