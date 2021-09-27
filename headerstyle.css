@@ -176,6 +176,13 @@ color:#000000;
             margin-left:4.5%;
         }
     }
+ @media (max-width:1500px) and (min-width:1296px)
+    {
+        nav li{
+            margin:0.5% 1%;
+            margin-left:4.5%;
+        }
+    }
     
 
 
